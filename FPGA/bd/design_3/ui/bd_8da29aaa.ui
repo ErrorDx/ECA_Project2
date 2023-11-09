@@ -1,0 +1,29 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-384,-9",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port M01_AXIS -pg 1 -lvl 3 -x 610 -y 300 -defaultsOSRD
+preplace port S03_AXIS -pg 1 -lvl 0 -x 0 -y 290 -defaultsOSRD
+preplace port S_AXI_CTRL -pg 1 -lvl 0 -x 0 -y 350 -defaultsOSRD
+preplace port port-id_s_axi_ctrl_aresetn -pg 1 -lvl 0 -x 0 -y 390 -defaultsOSRD
+preplace port port-id_s_axi_ctrl_aclk -pg 1 -lvl 0 -x 0 -y 370 -defaultsOSRD
+preplace inst axis_data_fifo -pg 1 -lvl 1 -x 160 -y 90 -defaultsOSRD
+preplace inst axis_switch -pg 1 -lvl 2 -x 450 -y 330 -defaultsOSRD
+preplace inst axis_interface_0 -pg 1 -lvl 1 -x 160 -y 450 -defaultsOSRD
+preplace netloc rst_ps8_0_99M_peripheral_aresetn 1 0 2 20 340 300
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 2 30 360 290
+preplace netloc axi_dma_M_AXIS_MM2S 1 0 2 NJ 290 NJ
+preplace netloc axis_data_fifo_M_AXIS 1 1 1 310 90n
+preplace netloc axis_interface_0_axis_m 1 1 1 310 250n
+preplace netloc axis_switch_0_M01_AXIS 1 2 1 N 300
+preplace netloc axis_switch_M00_AXIS 1 0 3 20 10 NJ 10 590
+preplace netloc axis_switch_M02_AXIS 1 0 3 40 370 280J 490 590
+preplace netloc ps8_0_axi_periph_M02_AXI 1 0 2 NJ 350 NJ
+levelinfo -pg 1 0 160 450 610
+pagesize -pg 1 -db -bbox -sgen -180 0 730 530
+"
+}
+0
