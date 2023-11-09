@@ -1,0 +1,94 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x1D05C83B521D9AEE",
+      "device": "xck26-sfvc784-2LV-c",
+      "gen_directory": "../../../../Q_IP_conv.gen/sources_1/bd/design_2",
+      "name": "design_2",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.2"
+    },
+    "design_tree": {
+      "blk_mem_gen_0": "",
+      "top_conv_0": ""
+    },
+    "components": {
+      "blk_mem_gen_0": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "design_2_blk_mem_gen_0_0",
+        "xci_path": "ip/design_2_blk_mem_gen_0_0/design_2_blk_mem_gen_0_0.xci",
+        "inst_hier_path": "blk_mem_gen_0",
+        "parameters": {
+          "Coe_File": {
+            "value": "../../../../../../init_12.coe"
+          },
+          "Enable_A": {
+            "value": "Always_Enabled"
+          },
+          "Load_Init_File": {
+            "value": "true"
+          },
+          "Write_Depth_A": {
+            "value": "16"
+          },
+          "Write_Width_A": {
+            "value": "384"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "top_conv_0": {
+        "vlnv": "caes:user:top_conv:1.0",
+        "xci_name": "design_2_top_conv_0_0",
+        "xci_path": "ip/design_2_top_conv_0_0/design_2_top_conv_0_0.xci",
+        "inst_hier_path": "top_conv_0",
+        "parameters": {
+          "BRAM_BLOCK_WIDTH": {
+            "value": "4"
+          },
+          "BRAM_DATA_WIDTH": {
+            "value": "384"
+          },
+          "IMAGE_LENGTH": {
+            "value": "12"
+          }
+        }
+      }
+    },
+    "nets": {
+      "Net": {
+        "ports": [
+          "blk_mem_gen_0/clka",
+          "top_conv_0/clk"
+        ]
+      },
+      "blk_mem_gen_0_douta": {
+        "ports": [
+          "blk_mem_gen_0/douta",
+          "top_conv_0/BRAM_dout_a"
+        ]
+      },
+      "top_conv_0_BRAM_addr_a": {
+        "ports": [
+          "top_conv_0/BRAM_addr_a",
+          "blk_mem_gen_0/addra"
+        ]
+      },
+      "top_conv_0_BRAM_din_a": {
+        "ports": [
+          "top_conv_0/BRAM_din_a",
+          "blk_mem_gen_0/dina"
+        ]
+      },
+      "top_conv_0_BRAM_we_a": {
+        "ports": [
+          "top_conv_0/BRAM_we_a",
+          "blk_mem_gen_0/wea"
+        ]
+      }
+    }
+  }
+}
